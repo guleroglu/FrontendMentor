@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+$transparen-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+body {
+    font-size: 15px;
+    background-color: $very-light-gray;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn {
+    border: 2px solid #fff;
+    padding: 13px 27px;
+    border-radius: 26px;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    display: inline-block;
+    margin-top: 60px;
+    transition: all .3s ease;
+
+    &:hover {
+        color: $very-light-gray;
+        background-color: transparent;
+    }
+}
+
+.btn-sedan {
+    color: $bright-orange;
+}
+
+.btn-suvs {
+    color: $dark-cyan;
+}
+
+.btn-luxury {
+    color: $very-dark-cyan;
+}
+
+h2 {
+    color: $very-light-gray;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+p {
+    line-height: 1.6;
+    color: $transparen-white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container {
+
+    max-width: 960px;
+    margin: 0 auto;
+
+    .card-wrapper {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 12px;
+        margin: 2rem;
+        overflow: hidden;
+    
+
+        .card {
+            padding: 40px;
+        }
+
+        
+
+        .card-sedan {
+            background-color: $bright-orange;
+        }
+
+        .card-suvs {
+            background-color: $dark-cyan;
+        }
+
+        .card-luxury {
+            background-color: $very-dark-cyan;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .card-wrapper {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-wrapper {
+        margin: 2rem .5rem;
+    }
+}
