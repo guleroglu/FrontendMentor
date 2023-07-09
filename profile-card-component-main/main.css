@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(https://digitshack.com/codepen/mentor4/bg-pattern-top.svg), url(https://digitshack.com/codepen/mentor4/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+}
+
+.card {
+  max-width: 420px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: auto;
+}
+.card .card-content-top .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -52px;
+  margin-bottom: 20px;
+}
+.card .card-content-top h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 10px;
+}
+.card .card-content-top h2 span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+.card .card-content-top p {
+  color: hsl(227, 10%, 46%);
+  font-size: 13px;
+}
+.card .card-content-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  margin-top: 30px;
+  border-top: 1px solid hsla(227, 10%, 46%, 0.2);
+}
+.card .card-content-bottom .num {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=main.css.map */
