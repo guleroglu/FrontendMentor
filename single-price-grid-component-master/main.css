@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Karla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.container .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 7px;
+  margin: 2rem 1rem;
+  background-color: #fff;
+}
+.container .card-wrapper .box-bottom {
+  display: flex;
+}
+.container .card-wrapper .box-bottom .box-sub {
+  background-color: hsl(179, 62%, 43%);
+  flex: 1;
+}
+.container .card-wrapper .box-bottom .box-why {
+  background-color: hsl(179, 62%, 50%);
+  opacity: 0.92;
+  flex: 1;
+}
+.container .card-wrapper .box {
+  padding: 40px;
+}
+.container .card-wrapper h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 26px;
+  padding-bottom: 26px;
+}
+.container .card-wrapper h3 {
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 12px;
+}
+.container .card-wrapper .box-join p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.4;
+}
+.container .card-wrapper h2 {
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.container .card-wrapper h5 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.container .card-wrapper h5 span.price {
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+.container .card-wrapper h5 span {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+}
+.container .card-wrapper .box-sub p {
+  color: #FFF;
+}
+.container .card-wrapper .box-sub a {
+  display: block;
+  text-align: center;
+  background-color: hsl(71, 73%, 54%);
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 12px 0;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+.container .card-wrapper .box-why ul {
+  list-style: none;
+}
+.container .card-wrapper .box-why ul li {
+  color: hsl(204, 43%, 93%);
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+@media (max-width: 450px) {
+  .box-bottom {
+    flex-direction: column;
+  }
+  .box {
+    padding: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
