@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
+}
+.card .img-top {
+  position: relative;
+}
+.card .img-top .img-nft {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+.card .img-top .img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.card .img-top .img-overlay img {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.card .img-top:hover .img-overlay,
+.card .img-top:hover .img-overlay img {
+  display: block;
+}
+.card .card-content a {
+  color: hsl(0, 0%, 100%);
+  font-size: 21px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  padding: 20px 0;
+}
+.card .card-content a:hover {
+  color: cyan;
+}
+.card .card-content p {
+  color: hsl(215, 51%, 70%);
+}
+.card .price-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+.card .price-time .price,
+.card .price-time .time {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+.card .price-time .price p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+.card .price-time .time p {
+  color: hsl(215, 51%, 70%);
+}
+.card .author {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  border-top: 1px solid hsl(215, 51%, 70%);
+  padding: 20px 0;
+}
+.card .author img {
+  border: 2px solid hsl(215, 51%, 70%);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+.card .author p {
+  color: hsl(215, 51%, 70%);
+}
+.card .author a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.card .author a:hover {
+  color: cyan;
+}/*# sourceMappingURL=main.css.map */
