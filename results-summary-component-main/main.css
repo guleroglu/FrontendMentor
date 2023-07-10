@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Hanken Grotes", sans-serif;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.container .cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.container .cards-wrapper .card-left {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+.container .cards-wrapper .card-left .card-left-title {
+  color: hsl(241, 100%, 89%);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0 50px 0;
+}
+.container .cards-wrapper .card-left .score-circle {
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  padding: 50px 0;
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+}
+.container .cards-wrapper .card-left .score-circle strong {
+  font-size: 48px;
+  color: hsl(0, 0%, 100%);
+}
+.container .cards-wrapper .card-left .score-circle p {
+  font-size: 14px;
+  color: hsl(241, 100%, 89%);
+  margin-top: 10px;
+}
+.container .cards-wrapper .card-left h4 {
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 30px 0 20px 0;
+}
+.container .cards-wrapper .card-left p {
+  font-size: 16px;
+  color: hsl(241, 100%, 89%);
+  padding: 0 60px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .cards-wrapper .card-right {
+  background-color: hsl(0, 0%, 100%);
+  flex: 1;
+  text-align: start;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+}
+.container .cards-wrapper .card-right h4 {
+  color: hsl(224, 30%, 27%);
+  font-size: 20px;
+  font-weight: 600;
+}
+.container .cards-wrapper .card-right .card-right-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin-top: 30px;
+}
+.container .cards-wrapper .card-right .card-right-content .reaction h5 {
+  color: hsl(0, 100%, 67%);
+}
+.container .cards-wrapper .card-right .card-right-content .memory h5 {
+  color: hsl(39, 100%, 56%);
+}
+.container .cards-wrapper .card-right .card-right-content .verbal h5 {
+  color: hsl(166, 100%, 37%);
+}
+.container .cards-wrapper .card-right .card-right-content .visual h5 {
+  color: hsl(234, 85%, 45%);
+}
+.container .cards-wrapper .card-right .card-right-content .flex-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.container .cards-wrapper .card-right .card-right-content .flex-card .card-head {
+  display: flex;
+  column-gap: 30px;
+}
+.container .cards-wrapper .card-right .card-right-content button {
+  background-color: hsl(224, 30%, 27%);
+  padding: 1rem;
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  border: none;
+  font-weight: 700;
+}
+.container .cards-wrapper .card-right .card-right-content button:hover {
+  background-color: hsl(256, 72%, 46%);
+}
+
+@media (max-width: 768px) {
+  .cards-wrapper {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */

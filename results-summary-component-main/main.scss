@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf)  format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$light-red: hsl(0, 100%, 67%);
+$orangey-yellow: hsl(39, 100%, 56%);
+$green-teal: hsl(166, 100%, 37%);
+$cobalt-blue: hsl(234, 85%, 45%);
+
+$light-slate-blue: hsl(252, 100%, 67%);
+$light-royal-blue: hsl(241, 81%, 54%);
+
+$violet-blue: hsla(256, 72%, 46%, 1);
+$persian-blue: hsla(241, 72%, 46%, 0);
+
+$white: hsl(0, 0%, 100%);
+$pale-blue: hsl(221, 100%, 96%);
+$light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+
+body {
+    font-size: 18px;
+    font-family: "Hanken Grotes", sans-serif;
+    min-height: 100vh;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+        
+        .card-left {
+            background-image: linear-gradient($light-slate-blue, $light-royal-blue);
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+
+            .card-left-title {
+                color: $light-lavender;
+                font-size: 16px;
+                font-weight: 600;
+                margin: 10px 0 50px 0;
+            }
+
+            .score-circle {
+                background-image: linear-gradient($violet-blue, $persian-blue);
+                border-color: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: none;
+                padding: 50px 0;
+                border-radius: 100%;
+                width: 180px;
+                height: 180px;
+                margin: auto;
+                
+                strong {
+                    font-size: 48px;
+                    color: $white;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $light-lavender;
+                    margin-top: 10px;
+                }
+            }
+
+            h4 {
+                color: $white;
+                font-size: 24px;
+                font-weight: 600;
+                margin: 30px 0 20px 0;
+            }
+
+            p {
+                font-size: 16px;
+                color: $light-lavender;
+                padding: 0 60px;
+                line-height: 1.2;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        .card-right {
+            background-color: $white;
+            flex: 1;
+            text-align: start;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: white;
+
+            h4 {
+                color: $dark-gray-blue;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            
+            .card-right-content {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 20px;
+                margin-top: 30px;
+
+                .reaction {
+                    h5 {
+                        color: $light-red;
+                    }
+                }
+
+                .memory {
+                    h5 {
+                        color: $orangey-yellow;
+                    }
+                }
+
+                .verbal {
+                    h5 {
+                        color: $green-teal;
+                    }
+                }
+
+                .visual {
+                    h5 {
+                        color: $cobalt-blue;
+                    }
+                }
+
+                .flex-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+
+                    .card-head {
+                        display: flex;
+                        column-gap: 30px;
+                    }
+                }
+                button {
+                    background-color: $dark-gray-blue;
+                    padding: 1rem;
+                    border-radius: 25px;
+                    color: $white;
+                    text-decoration: none;
+                    margin-top: 30px;
+                    cursor: pointer;
+                    transition: .3s ease all;
+                    border: none;
+                    font-weight: 700;
+    
+                   &:hover {
+                    background-color: $violet-blue;
+                   }
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-wrapper{
+        flex-direction: column;
+    }
+}
