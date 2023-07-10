@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background: hsl(25, 97%, 53%) !important;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.rating-card {
+  max-width: 400px;
+  background-image: linear-gradient(to bottom, hsl(212, 18%, 14%), hsl(220, 16%, 11%));
+  border-radius: 23px;
+  margin: auto;
+  padding: 10px 30px;
+}
+.rating-card .rating-img {
+  border: none;
+  background-color: hsl(213, 19%, 18%);
+  padding: 7px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.rating-card .rating-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 26px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.rating-card .rating-desc {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6;
+  margin-top: 6px;
+}
+.rating-card .rating-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.rating-card .rating-list .rating-item-button {
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(213, 19%, 18%);
+  padding: 12px 18px;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.rating-card .rating-list .rating-item-button:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+}
+.rating-card .rating-submit-btn {
+  background-color: hsl(25, 97%, 53%);
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  border-radius: 35px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+.rating-card .rating-submit-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.thanks-card {
+  max-width: 400px;
+  background-image: linear-gradient(to bottom, hsl(212, 18%, 14%), hsl(220, 16%, 11%));
+  border-radius: 23px;
+  margin: auto;
+  padding: 10px 30px;
+  text-align: center;
+}
+.thanks-card .thanks-img {
+  width: 135px;
+  margin: 30px;
+}
+.thanks-card .rating-desc {
+  color: hsl(25, 97%, 53%);
+  font-weight: 500;
+  background-color: hsl(213, 19%, 18%);
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.thanks-card .thanks-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 26px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.thanks-card .thanks-desc {
+  color: hsl(216, 12%, 54%);
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}/*# sourceMappingURL=main.css.map */
