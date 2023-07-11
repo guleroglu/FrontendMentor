@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.active {
+  background-color: hsl(214, 17%, 51%) !important;
+  color: hsl(210, 46%, 95%);
+}
+
+.share-active {
+  visibility: visible !important;
+}
+
+.article-card {
+  max-width: 730px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  box-shadow: 6px 6px 5px hsla(0, 0%, 0%, 0.02), 25px 25px 20px hsla(0, 0%, 0%, 0.03), 100px 100px 80px hsla(0, 0%, 0%, 0.05);
+}
+.article-card .article-img {
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+}
+.article-card .article-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+.article-card .article-content {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 40px;
+  background-color: hsl(210, 46%, 95%);
+}
+.article-card .article-content .article-title {
+  color: hsl(217, 19%, 35%);
+  font-size: 20px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.article-card .article-content .article-text {
+  color: hsl(214, 17%, 51%);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+.article-card .article-content .article-content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-card .article-content .article-content-footer .author {
+  display: flex;
+  align-items: center;
+}
+.article-card .article-content .article-content-footer .author .author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.article-card .article-content .article-content-footer .author .author-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+.article-card .article-content .article-content-footer .author .author-info .author-name {
+  color: hsl(217, 19%, 35%);
+  font-size: 13px;
+}
+.article-card .article-content .article-content-footer .author .author-info .publish-date {
+  color: hsl(212, 23%, 69%);
+  font-size: 13px;
+}
+.article-card .article-content .article-content-footer .share {
+  position: relative;
+}
+.article-card .article-content .article-content-footer .share .share-button {
+  border: none;
+  background-color: transparent;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 30px;
+  font-size: 17px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.article-card .article-content .article-content-footer .share .share-button:hover {
+  background-color: hsl(214, 17%, 51%);
+  color: hsl(210, 46%, 95%);
+}
+.article-card .article-content .article-content-footer .share .share-option {
+  visibility: hidden;
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: calc(100% + 18px);
+  right: -180%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.2);
+  transform-origin: bottom;
+  transition: all 0.25s ease;
+}
+.article-card .article-content .article-content-footer .share .share-option::after {
+  content: "";
+  background: hsl(217, 19%, 35%);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+.article-card .article-content .article-content-footer .share .share-option span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(212, 23%, 69%);
+  margin-right: 5px;
+}
+.article-card .article-content .article-content-footer .share .share-option i {
+  font-size: 22px;
+  color: hsl(210, 46%, 95%);
+}
+
+@media (max-width: 768px) {
+  .article-card {
+    grid-template-columns: 1fr;
+    max-width: 294px;
+    overflow: hidden;
+  }
+  .article-card .author-avatar {
+    width: 35px;
+    height: 35px;
+  }
+  .article-card .article-content {
+    padding: 30px 28px 20px;
+  }
+  .article-card .article-content .article-title {
+    font-size: 15px;
+  }
+  .article-card .article-content .article-text {
+    margin-bottom: 30px;
+  }
+  .article-card .article-content .article-content-footer {
+    position: relative;
+  }
+  .article-card .article-content .article-content-footer .share-option {
+    top: -60% !important;
+    right: -45% !important;
+    padding: 37px 60px !important;
+  }
+  .article-card .article-content .article-content-footer .share-button i {
+    position: static !important;
+    z-index: 1 !important;
+  }
+}/*# sourceMappingURL=main.css.map */
