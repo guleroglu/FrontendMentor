@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+
+    --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+body {
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+.active {
+    border: 2px solid var(--soft-red) !important;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    padding: 50px 120px;
+    flex: 1;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.card-content h1 {
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.card-content span {
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+.card-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    color: var(--desaturated-red);
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.form-item input {
+    padding: 15px 90px;
+    border-radius: 19px;
+    border: 1px solid var(--soft-red);
+    outline: none;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.form-button {
+    padding: 12px 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    cursor: pointer;
+    position: absolute;
+    left: 390px;
+
+}
+
+.form-button:hover {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}
+
+.error-text {
+    color: var(--soft-red);
+    font-size: 13px;
+    margin: 10px 35px;
+    display: none;
+}
+
+.card-right {
+    height: 100vh;
+    flex: 1;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+}
+
+@media (max-width: 1280px) {
+    .card {
+        flex-direction: column-reverse !important;
+    }
+
+    .card-left {
+        padding: 10px 20px;
+        row-gap: 10px;
+    }
+}
