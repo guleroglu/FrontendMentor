@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+    background-color: var(--very-light-grayish-blue);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+}
+
+.container {
+    max-width: 770px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, .26);
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px;
+}
+
+.container .top-notifications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .top-notifications .notification-title {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.container .top-notifications .notification-title h3 {
+    color: var(--very-dark-blue);
+    letter-spacing: 1px;
+}
+
+.container .top-notifications .notification-title p {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+.container .top-notifications a {
+    text-decoration: none;
+    color: var(--grayish-blue);
+    font-size: 13px;
+    font-weight: 800;
+    transition: .1s ease all;
+}
+
+.container .top-notifications a:hover {
+    color: var(--blue);
+}
+
+.container .notifications {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.container .notifications .single-notification {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 25px;
+}
+
+.container .notifications .single-notification.unread {
+    background-color: var(--very-light-grayish-blue);
+    border-radius: 10px;
+}
+
+.container .notifications .single-notification .avatar img {
+    width: 35px;
+    background-position: center;
+    background-size: cover;
+}
+
+.container .notifications .single-notification .single-text {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    font-size: 13px;
+}
+
+.container .notifications .single-notification .single-text .name {
+    color: var(--very-dark-blue);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.container .notifications .single-notification .single-text .name:hover {
+    color: var(--blue);
+}
+
+.container .notifications .single-notification .single-text .notification-desc {
+    color: var(--grayish-blue);
+    font-weight: 800;
+}
+
+.container .notifications .single-notification .single-text .notification-info {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-weight: 800;
+}
+
+.container .notifications .single-notification .single-text .notification-info:hover {
+    color: var(--blue);
+}
+
+.container .notifications .single-notification .single-text .dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: var(--red);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rizky-message {
+    width: 450px;
+    border: 2px solid var(--light-grayish-blue-1);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 77px;
+    text-decoration: none;
+    color: var(--grayish-blue);
+    font-weight: 500;
+}
+
+.rizky-message:hover {
+    background-color: var(--light-grayish-blue-2);
+}
+
+.kimberly-chess {
+    width: 35px;
+}
+
+
+@media (max-width: 481px) {
+    .container {
+        max-width: 450px;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .container .top-notifications {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .container .notifications .single-notification {
+        width: 400px;
+        padding: 20px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
+    }
+
+    
+}
+
