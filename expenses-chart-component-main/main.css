@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cream);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    row-gap: 20px;
+}
+
+main .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--soft-red);
+    width: 100%;
+    padding: 20px;
+    border-radius: 13px;
+    color: #fff;
+}
+
+main .top .top-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+main .top .top-text p {
+    font-size: 16px;
+}
+
+main .top .top-text h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+main .bottom {
+    background-color: var(--very-pale-orange);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    border-radius: 13px;
+}
+
+main .bottom .bottom-charts {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+main .bottom .bottom-charts .day {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    align-items: center;
+}
+
+main .bottom .bottom-charts .day .amount {
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 3px;
+    display: none;
+}
+
+main .bottom .bottom-charts .day .dayName {
+    font-size: 13px;
+    color: var(--medium-brown);
+    text-align: center;
+}
+
+
+main .bottom .bottom-charts .part {
+    display: inline-block;
+    width: 35px;
+    background-color: var(--soft-red);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+
+main .bottom .bottom-charts .part.active {
+    background-color: var(--cyan);
+}
+
+
+main .bottom .bottom-charts .part:hover {
+    opacity: .6;
+}
+
+
+main .bottom .bottom-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .bottom .bottom-desc .total-month {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+main .bottom .bottom-desc .total-month p {
+    color: var(--medium-brown);
+    font-size: 16px;
+}
+
+main .bottom .bottom-desc .total-month h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+main .bottom .bottom-desc .last-month {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+main .bottom .bottom-desc .last-month h4 {
+    text-align: end;
+}
+
+main .bottom .bottom-desc .last-month p {
+    color: var(--medium-brown);
+}
